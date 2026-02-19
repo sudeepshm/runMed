@@ -1,0 +1,190 @@
+{
+  "status": "success",
+  "results": [
+    {
+      "patient id": "NA12878",
+      "drug": "CODEINE",
+      "timestamp": "2026-02-19T13:18:43.377935Z",
+      "risk_assessment": {
+        "risk_label": "Adjust",
+        "confidence_score": 0.8,
+        "severity": "moderate"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "CYP2D6",
+        "diplotype": "*2/*4",
+        "phenotype": "IM (Intermediate Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs3892097",
+          "genotype": "1/1",
+          "allelic_depth": "0,48",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        },
+        {
+          "rsid": "rs1065852",
+          "genotype": "1/1",
+          "allelic_depth": "0,43",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        },
+        {
+          "rsid": "rs16947",
+          "genotype": "1/1",
+          "allelic_depth": "2,56",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        },
+        {
+          "rsid": "rs1135840",
+          "genotype": "1/1",
+          "allelic_depth": "1,52",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the CYP2D6 *2/*4 diplotype, classified as IM (Intermediate Metabolizer). This patient is a intermediate metabolizer, meaning they process this drug more slowly than normal. For CODEINE: Dose adjustment is recommended based on the patient's altered drug metabolism.",
+        "mechanism": "CYP2D6 is a cytochrome P450 enzyme responsible for metabolizing approximately 25% of clinically used drugs. The *2/*4 diplotype results in Intermediate Metabolizer status. The patient's altered metabolism necessitates dose adjustment of CODEINE to achieve optimal therapeutic levels while minimizing adverse effects. The enzyme's altered activity directly affects the rate of drug biotransformation, impacting both efficacy and safety profiles."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 10,
+        "pharmacogenes_found": 6
+      }
+    },
+    {
+      "patient id": "NA12878",
+      "drug": "WARFARIN",
+      "timestamp": "2026-02-19T13:18:43.378951Z",
+      "risk_assessment": {
+        "risk_label": "Adjust",
+        "confidence_score": 0.9,
+        "severity": "high"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "CYP2C9",
+        "diplotype": "*2/*3",
+        "phenotype": "IM (Intermediate Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs1799853",
+          "genotype": "1/1",
+          "allelic_depth": "0,46",
+          "clinical_recommendation": "Reduce warfarin starting dose by 25-50%. IM patients have decreased warfarin clearance and increased bleeding risk. Monitor INR closely."
+        },
+        {
+          "rsid": "rs1057910",
+          "genotype": "0/1",
+          "allelic_depth": "20,20",
+          "clinical_recommendation": "Reduce warfarin starting dose by 25-50%. IM patients have decreased warfarin clearance and increased bleeding risk. Monitor INR closely."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the CYP2C9 *2/*3 diplotype, classified as IM (Intermediate Metabolizer). This patient is a intermediate metabolizer, meaning they process this drug more slowly than normal. For WARFARIN: Dose adjustment is recommended based on the patient's altered drug metabolism.",
+        "mechanism": "CYP2C9 metabolizes drugs with narrow therapeutic indices, including warfarin and phenytoin. The *2/*3 diplotype indicates Intermediate Metabolizer status, with reduced S-warfarin 7-hydroxylation capacity. The patient's altered metabolism necessitates dose adjustment of WARFARIN to achieve optimal therapeutic levels while minimizing adverse effects. Altered CYP2C9 activity significantly affects drug clearance and steady-state concentrations."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 10,
+        "pharmacogenes_found": 6
+      }
+    },
+    {
+      "patient id": "NA12878",
+      "drug": "SIMVASTATIN",
+      "timestamp": "2026-02-19T13:18:43.379457Z",
+      "risk_assessment": {
+        "risk_label": "Adjust",
+        "confidence_score": 0.9,
+        "severity": "high"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "SLCO1B1",
+        "diplotype": "*5/*15",
+        "phenotype": "DF (Decreased Function)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs4149056",
+          "genotype": "1/1",
+          "allelic_depth": "0,53",
+          "clinical_recommendation": "Use lower dose simvastatin (max 20mg) or switch to pravastatin/rosuvastatin. Decreased OATP1B1 function increases systemic statin exposure and myopathy risk."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the SLCO1B1 *5/*15 diplotype, classified as DF (Decreased Function). This patient is a decreased transporter function, leading to altered drug disposition. For SIMVASTATIN: Dose adjustment is recommended based on the patient's altered drug metabolism.",
+        "mechanism": "SLCO1B1 encodes the OATP1B1 hepatic uptake transporter critical for statin disposition. The *5/*15 diplotype confers Decreased Function. The patient's altered metabolism necessitates dose adjustment of SIMVASTATIN to achieve optimal therapeutic levels while minimizing adverse effects. Altered OATP1B1 function affects hepatic statin uptake, modifying systemic exposure and myopathy risk."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 10,
+        "pharmacogenes_found": 6
+      }
+    },
+    {
+      "patient id": "NA12878",
+      "drug": "FLUOROURACIL",
+      "timestamp": "2026-02-19T13:18:43.379457Z",
+      "risk_assessment": {
+        "risk_label": "Adjust",
+        "confidence_score": 0.95,
+        "severity": "critical"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "DPYD",
+        "diplotype": "*1/*2A",
+        "phenotype": "IM (Intermediate Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs3918290",
+          "genotype": "0/1",
+          "allelic_depth": "25,24",
+          "clinical_recommendation": "Reduce fluorouracil/capecitabine dose by 50%. Intermediate DPD activity increases risk of severe and potentially fatal toxicity (mucositis, myelosuppression)."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the DPYD *1/*2A diplotype, classified as IM (Intermediate Metabolizer). This patient is a intermediate metabolizer, meaning they process this drug more slowly than normal. For FLUOROURACIL: Dose adjustment is recommended based on the patient's altered drug metabolism.",
+        "mechanism": "Dihydropyrimidine dehydrogenase (DPD), encoded by DPYD, is the rate-limiting enzyme in fluoropyrimidine catabolism, inactivating approximately 80% of administered 5-FU. The *1/*2A diplotype results in Intermediate Metabolizer DPD activity. The patient's altered metabolism necessitates dose adjustment of FLUOROURACIL to achieve optimal therapeutic levels while minimizing adverse effects. Reduced DPD activity leads to prolonged exposure to cytotoxic fluoropyrimidine metabolites."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 10,
+        "pharmacogenes_found": 6
+      }
+    },
+    {
+      "patient id": "NA12878",
+      "drug": "AZATHIOPRINE",
+      "timestamp": "2026-02-19T13:18:43.379457Z",
+      "risk_assessment": {
+        "risk_label": "Toxic",
+        "confidence_score": 0.95,
+        "severity": "critical"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "TPMT",
+        "diplotype": "*3A/*3C",
+        "phenotype": "PM (Poor Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs1142345",
+          "genotype": "0/1",
+          "allelic_depth": "17,19",
+          "clinical_recommendation": "AVOID azathioprine or use 10% of standard dose with frequent CBC monitoring. Life-threatening myelosuppression expected."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the TPMT *3A/*3C diplotype, classified as PM (Poor Metabolizer). This patient is a poor metabolizer, meaning they have significantly reduced ability to process this drug. For AZATHIOPRINE: This drug poses a significant toxicity risk for this patient due to their genetic profile. Alternative therapy should be strongly considered.",
+        "mechanism": "Thiopurine S-methyltransferase (TPMT) catalyzes the methylation and inactivation of thiopurine drugs. The *3A/*3C diplotype results in Poor Metabolizer TPMT activity. The patient's genetic profile leads to drug accumulation or excessive active metabolite formation, creating a significant toxicity risk with AZATHIOPRINE. Reduced TPMT activity shifts metabolism toward cytotoxic thioguanine nucleotide accumulation, increasing myelosuppression risk."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 10,
+        "pharmacogenes_found": 6
+      }
+    }
+  ],
+  "errors": []
+}

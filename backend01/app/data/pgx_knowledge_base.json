@@ -1,0 +1,69 @@
+[
+    {
+        "id": "cyp2d6_overview",
+        "gene": "CYP2D6",
+        "title": "CYP2D6 Pharmacogenomics Overview",
+        "content": "CYP2D6 is one of the most polymorphic drug-metabolizing enzymes in the cytochrome P450 superfamily, located on chromosome 22q13.2. It is responsible for the metabolism of approximately 25% of clinically used drugs, including opioids (codeine, tramadol), antidepressants (fluoxetine, paroxetine), antipsychotics (haloperidol, risperidone), beta-blockers (metoprolol), and tamoxifen. CYP2D6 exhibits extensive genetic polymorphism with over 100 known allelic variants catalogued by PharmVar. The most clinically significant alleles include *3, *4, *5, and *6 (no function), *9, *10, *17, and *41 (decreased function), and gene duplications (*1xN, *2xN) associated with ultra-rapid metabolism. The Clinical Pharmacogenetics Implementation Consortium (CPIC) classifies CYP2D6 metabolizer phenotypes based on an Activity Score system: Poor Metabolizer (AS=0), Intermediate Metabolizer (AS=0.25-1.0), Normal Metabolizer (AS=1.25-2.25), and Ultra-rapid Metabolizer (AS>2.25). Phenotype assignment directly impacts drug selection and dosing recommendations."
+    },
+    {
+        "id": "cyp2d6_codeine",
+        "gene": "CYP2D6",
+        "drug": "CODEINE",
+        "title": "CYP2D6 and Codeine Metabolism",
+        "content": "Codeine is a prodrug that requires CYP2D6-mediated O-demethylation to its active metabolite morphine for analgesic effect. In ultra-rapid metabolizers (UM), the conversion rate is dramatically increased, leading to supratherapeutic morphine concentrations that can cause life-threatening respiratory depression, especially in children and neonates. Multiple fatalities have been reported, including a breastfed infant whose mother was an ultra-rapid metabolizer. The FDA issued a boxed warning in 2013 and subsequently contraindicated codeine in children under 12. CPIC guidelines strongly recommend avoiding codeine in both UMs (due to toxicity) and PMs (due to lack of efficacy — insufficient morphine formation). For intermediate metabolizers, codeine may provide reduced analgesic effect; alternative analgesics should be considered. Normal metabolizers can use codeine per standard dosing. The biological mechanism involves increased Vmax of CYP2D6 in UMs due to gene duplication, resulting in a greater fraction of codeine being converted to morphine per unit time."
+    },
+    {
+        "id": "cyp2c19_overview",
+        "gene": "CYP2C19",
+        "title": "CYP2C19 Pharmacogenomics Overview",
+        "content": "CYP2C19 is a major drug-metabolizing enzyme located on chromosome 10q23.33. It metabolizes several important drug classes including proton pump inhibitors (omeprazole, pantoprazole), antiplatelet agents (clopidogrel), antidepressants (citalopram, sertraline), antifungals (voriconazole), and antimalarials. The most clinically significant loss-of-function alleles are *2 (c.681G>A, aberrant splice site, rs4244285) and *3 (c.636G>A, premature stop codon, rs4986893). The gain-of-function allele *17 (c.-806C>T, rs12248560) increases CYP2C19 transcription. CPIC phenotype classification includes: Ultra-rapid Metabolizer (UM), Rapid Metabolizer (RM), Normal Metabolizer (NM/EM), Intermediate Metabolizer (IM), and Poor Metabolizer (PM). CYP2C19 polymorphisms significantly affect the pharmacokinetics and clinical outcomes of clopidogrel, where PMs have markedly reduced antiplatelet effect and increased cardiovascular event risk."
+    },
+    {
+        "id": "cyp2c19_clopidogrel",
+        "gene": "CYP2C19",
+        "drug": "CLOPIDOGREL",
+        "title": "CYP2C19 and Clopidogrel Bioactivation",
+        "content": "Clopidogrel is a thienopyridine antiplatelet agent that requires CYP2C19-mediated bioactivation to its active thiol metabolite. This two-step oxidation process is primarily dependent on CYP2C19, with additional contributions from CYP1A2, CYP2B6, and CYP3A4. In CYP2C19 poor metabolizers, the formation of the active metabolite is reduced by approximately 75%, resulting in diminished platelet inhibition and significantly increased risk of major adverse cardiovascular events (MACE), including stent thrombosis. The TRITON-TIMI 38 and PLATO trials demonstrated this pharmacogenomic effect. CPIC guidelines recommend alternative antiplatelet therapy (prasugrel or ticagrelor) for CYP2C19 IM and PM patients undergoing percutaneous coronary intervention (PCI). The FDA added a boxed warning to the clopidogrel label in 2010. For UM and RM patients, standard or potentially enhanced antiplatelet response is expected."
+    },
+    {
+        "id": "cyp2c9_warfarin",
+        "gene": "CYP2C9",
+        "drug": "WARFARIN",
+        "title": "CYP2C9 and Warfarin Sensitivity",
+        "content": "Warfarin is the most widely prescribed oral anticoagulant. It exists as a racemic mixture of S- and R-warfarin, with S-warfarin being 3-5 times more potent. CYP2C9 is the primary enzyme responsible for S-warfarin metabolism via 7-hydroxylation. The *2 allele (R144C, rs1799853) reduces enzyme activity to approximately 12% and the *3 allele (I359L, rs1057910) to approximately 5% of wild-type. Patients carrying CYP2C9 variant alleles require significantly lower warfarin doses and face increased bleeding risk during initiation. Combined with VKORC1 genotyping, CYP2C9 pharmacogenomics can explain up to 40% of warfarin dose variability. CPIC guidelines recommend starting dose reductions of 25-50% for *1/*2 and *1/*3 carriers, and 50-80% for *2/*2, *2/*3, and *3/*3 carriers. The GAGE and EU-PACT clinical trials demonstrated that genotype-guided warfarin dosing improves time in therapeutic range (TTR) and reduces adverse events."
+    },
+    {
+        "id": "dpyd_fluoropyrimidines",
+        "gene": "DPYD",
+        "drug": "FLUOROURACIL",
+        "title": "DPYD and Fluoropyrimidine Toxicity",
+        "content": "Dihydropyrimidine dehydrogenase (DPD), encoded by the DPYD gene on chromosome 1p21.3, is the initial and rate-limiting enzyme in the catabolism of fluoropyrimidine drugs including 5-fluorouracil (5-FU), capecitabine, and tegafur. DPD metabolizes approximately 80% of administered 5-FU. Four key DPYD variants are associated with DPD deficiency: *2A (c.1905+1G>A, rs3918290, complete loss of function — exon 14 skipping), *13 (c.1679T>G, rs55886062, near-complete loss of function), c.2846A>T (rs67376798, decreased function), and HapB3 (c.1236G>A, rs56038477, decreased function). Patients with partial DPD deficiency (heterozygous carriers) experience severe grade 3-4 toxicity in 30-73% of cases, while complete DPD deficiency is potentially fatal. CPIC guidelines recommend 50% dose reduction for intermediate metabolizers and avoidance of fluoropyrimidines for poor metabolizers. Pre-treatment DPYD genotyping has become standard of care in the European Union since 2020, per EMA recommendation."
+    },
+    {
+        "id": "tpmt_thiopurines",
+        "gene": "TPMT",
+        "drug": "AZATHIOPRINE",
+        "title": "TPMT and Thiopurine Toxicity",
+        "content": "Thiopurine S-methyltransferase (TPMT) catalyzes the S-methylation of thiopurine drugs including azathioprine, mercaptopurine (6-MP), and thioguanine. TPMT competes with hypoxanthine phosphoribosyl transferase (HPRT) for 6-MP substrate; reduced TPMT activity shunts metabolism toward HPRT, increasing cytotoxic thioguanine nucleotide (TGN) concentrations and causing dose-dependent myelosuppression. Three alleles — TPMT*2 (G238C), *3A (A460G+A719G), and *3C (A719G) — account for over 95% of decreased TPMT activity. Approximately 10% of Caucasians are heterozygous (intermediate activity) and 0.3% are homozygous deficient. CPIC guidelines recommend 30-80% dose reduction for intermediate metabolizers and avoidance or 10-fold reduction for poor metabolizers, with close CBC monitoring. TPMT genotyping or phenotyping is recommended prior to initiating thiopurine therapy and is considered standard of care in many institutions."
+    },
+    {
+        "id": "cyp3a5_tacrolimus",
+        "gene": "CYP3A5",
+        "drug": "TACROLIMUS",
+        "title": "CYP3A5 and Tacrolimus Dosing",
+        "content": "CYP3A5 contributes significantly to tacrolimus metabolism along with CYP3A4. The CYP3A5*3 allele (rs776746, 6986A>G) creates an aberrant splice site leading to a truncated, non-functional protein. CYP3A5 expression follows a trimodal pattern: *1/*1 (expressor, ~15% of Caucasians), *1/*3 (heterozygous, intermediate), and *3/*3 (non-expressor, ~70% of Caucasians). CYP3A5 expressors (*1/*1 and *1/*3) metabolize tacrolimus more rapidly and require 1.5-2 times higher starting doses to achieve target trough concentrations compared to non-expressors. This is particularly important in kidney transplant recipients where sub-therapeutic tacrolimus levels increase rejection risk. CPIC guidelines recommend increased starting doses for CYP3A5 expressors (0.3 mg/kg/day) versus non-expressors (0.25 mg/kg/day), with therapeutic drug monitoring to guide subsequent dose adjustments. The frequency of CYP3A5*1 varies significantly among populations, being highest in African populations (~70%)."
+    },
+    {
+        "id": "slco1b1_statins",
+        "gene": "SLCO1B1",
+        "drug": "SIMVASTATIN",
+        "title": "SLCO1B1 and Statin Myopathy",
+        "content": "SLCO1B1 encodes the organic anion transporting polypeptide 1B1 (OATP1B1), a hepatic uptake transporter critical for statin disposition. The c.521T>C variant (rs4149056, Val174Ala), which defines the *5 allele, reduces OATP1B1 transport activity and decreases hepatic uptake of statins. This leads to increased systemic statin exposure, particularly for simvastatin acid (the active form). The SEARCH Collaborative Group's genome-wide association study (2008) identified rs4149056 as the strongest genetic predictor of statin-induced myopathy, with an odds ratio of 4.5 per copy for simvastatin 80mg. Homozygous *5/*5 carriers have a 16.9-fold increased myopathy risk. CPIC guidelines recommend prescribing a lower dose of simvastatin or an alternative statin (pravastatin, rosuvastatin) for carriers of the rs4149056 C allele. The *15 haplotype combines *1B (rs2306283, A>G) with *5 and also confers decreased function."
+    },
+    {
+        "id": "pgx_general_principles",
+        "gene": "GENERAL",
+        "title": "Pharmacogenomics: General Principles",
+        "content": "Pharmacogenomics (PGx) studies how genetic variation affects drug response. Key principles include: (1) Phenotype classification — patients are categorized based on their predicted enzyme activity as Ultra-rapid Metabolizer (UM), Normal/Extensive Metabolizer (EM/NM), Intermediate Metabolizer (IM), or Poor Metabolizer (PM). (2) Activity Score system — a standardised method for phenotype assignment that sums the function values of each allele (e.g., normal=1, decreased=0.5, no function=0). (3) Clinical implementation — CPIC and DPWG provide evidence-based guidelines translating genotype to prescribing recommendations. (4) Star allele nomenclature — allelic variants are named using a star (*) notation (e.g., CYP2D6*4), with *1 typically representing the reference (wild-type) allele. (5) Diplotype — the combination of maternal and paternal alleles determines the overall phenotype. (6) Prodrug considerations — for prodrugs requiring metabolic activation (codeine, clopidogrel), PM status leads to reduced efficacy, while UM status may cause toxicity. For drugs inactivated by metabolism, the relationship is reversed."
+    }
+]

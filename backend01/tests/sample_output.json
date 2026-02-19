@@ -1,0 +1,226 @@
+{
+  "status": "success",
+  "results": [
+    {
+      "patient id": "TEST_001",
+      "drug": "CODEINE",
+      "timestamp": "2026-02-19T13:12:05.840340Z",
+      "risk_assessment": {
+        "risk_label": "Adjust",
+        "confidence_score": 0.8,
+        "severity": "moderate"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "CYP2D6",
+        "diplotype": "*2/*4",
+        "phenotype": "IM (Intermediate Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs3892097",
+          "genotype": "0/1",
+          "allelic_depth": "18,22",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        },
+        {
+          "rsid": "rs1065852",
+          "genotype": "0/1",
+          "allelic_depth": "20,19",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        },
+        {
+          "rsid": "rs1135840",
+          "genotype": "1/1",
+          "allelic_depth": "0,42",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        },
+        {
+          "rsid": "rs16947",
+          "genotype": "0/1",
+          "allelic_depth": "21,20",
+          "clinical_recommendation": "Use codeine with caution at reduced dose. Intermediate metabolism may reduce analgesic efficacy. Consider alternative analgesics if inadequate response."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the CYP2D6 *2/*4 diplotype, classified as IM (Intermediate Metabolizer). This patient is a intermediate metabolizer, meaning they process this drug more slowly than normal. For CODEINE: Dose adjustment is recommended based on the patient's altered drug metabolism.",
+        "mechanism": "CYP2D6 is a cytochrome P450 enzyme responsible for metabolizing approximately 25% of clinically used drugs. The *2/*4 diplotype results in Intermediate Metabolizer status. The patient's altered metabolism necessitates dose adjustment of CODEINE to achieve optimal therapeutic levels while minimizing adverse effects. The enzyme's altered activity directly affects the rate of drug biotransformation, impacting both efficacy and safety profiles."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 19,
+        "pharmacogenes_found": 8
+      }
+    },
+    {
+      "patient id": "TEST_001",
+      "drug": "WARFARIN",
+      "timestamp": "2026-02-19T13:12:05.840340Z",
+      "risk_assessment": {
+        "risk_label": "Safe",
+        "confidence_score": 0.7,
+        "severity": "low"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "CYP2C9",
+        "diplotype": "*1/*2",
+        "phenotype": "EM (Normal Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs1799853",
+          "genotype": "0/1",
+          "allelic_depth": "25,20",
+          "clinical_recommendation": "Standard warfarin dosing per clinical protocols. Use pharmacogenomic dosing algorithms (e.g., WarfarinDosing.org)."
+        },
+        {
+          "rsid": "rs1057910",
+          "genotype": "0/0",
+          "allelic_depth": "40,0",
+          "clinical_recommendation": "Standard warfarin dosing per clinical protocols. Use pharmacogenomic dosing algorithms (e.g., WarfarinDosing.org)."
+        },
+        {
+          "rsid": "rs28371686",
+          "genotype": "0/0",
+          "allelic_depth": "38,0",
+          "clinical_recommendation": "Standard warfarin dosing per clinical protocols. Use pharmacogenomic dosing algorithms (e.g., WarfarinDosing.org)."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the CYP2C9 *1/*2 diplotype, classified as EM (Normal Metabolizer). This patient is a normal (extensive) metabolizer with typical drug processing capability. For WARFARIN: Standard dosing is appropriate for this patient based on their pharmacogenomic profile.",
+        "mechanism": "CYP2C9 metabolizes drugs with narrow therapeutic indices, including warfarin and phenytoin. The *1/*2 diplotype indicates Normal Metabolizer status, with reduced S-warfarin 7-hydroxylation capacity. The patient's normal metabolic capacity allows standard WARFARIN dosing with expected therapeutic outcomes. Altered CYP2C9 activity significantly affects drug clearance and steady-state concentrations."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 19,
+        "pharmacogenes_found": 8
+      }
+    },
+    {
+      "patient id": "TEST_001",
+      "drug": "SIMVASTATIN",
+      "timestamp": "2026-02-19T13:12:05.840340Z",
+      "risk_assessment": {
+        "risk_label": "Adjust",
+        "confidence_score": 0.9,
+        "severity": "high"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "SLCO1B1",
+        "diplotype": "*5/*15",
+        "phenotype": "DF (Decreased Function)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs4149056",
+          "genotype": "0/1",
+          "allelic_depth": "19,21",
+          "clinical_recommendation": "Use lower dose simvastatin (max 20mg) or switch to pravastatin/rosuvastatin. Decreased OATP1B1 function increases systemic statin exposure and myopathy risk."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the SLCO1B1 *5/*15 diplotype, classified as DF (Decreased Function). This patient is a decreased transporter function, leading to altered drug disposition. For SIMVASTATIN: Dose adjustment is recommended based on the patient's altered drug metabolism.",
+        "mechanism": "SLCO1B1 encodes the OATP1B1 hepatic uptake transporter critical for statin disposition. The *5/*15 diplotype confers Decreased Function. The patient's altered metabolism necessitates dose adjustment of SIMVASTATIN to achieve optimal therapeutic levels while minimizing adverse effects. Altered OATP1B1 function affects hepatic statin uptake, modifying systemic exposure and myopathy risk."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 19,
+        "pharmacogenes_found": 8
+      }
+    },
+    {
+      "patient id": "TEST_001",
+      "drug": "CLOPIDOGREL",
+      "timestamp": "2026-02-19T13:12:05.840340Z",
+      "risk_assessment": {
+        "risk_label": "Safe",
+        "confidence_score": 0.7,
+        "severity": "low"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "CYP2C19",
+        "diplotype": "*1/*17",
+        "phenotype": "UM (Ultrarapid Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs12248560",
+          "genotype": "0/1",
+          "allelic_depth": "22,23",
+          "clinical_recommendation": "Ultra-rapid metabolizers generate more active metabolite. Standard dosing is appropriate \u00e2\u20ac\u201d may have enhanced antiplatelet effect."
+        },
+        {
+          "rsid": "rs4244285",
+          "genotype": "0/0",
+          "allelic_depth": "42,0",
+          "clinical_recommendation": "Ultra-rapid metabolizers generate more active metabolite. Standard dosing is appropriate \u00e2\u20ac\u201d may have enhanced antiplatelet effect."
+        },
+        {
+          "rsid": "rs4986893",
+          "genotype": "0/0",
+          "allelic_depth": "36,0",
+          "clinical_recommendation": "Ultra-rapid metabolizers generate more active metabolite. Standard dosing is appropriate \u00e2\u20ac\u201d may have enhanced antiplatelet effect."
+        },
+        {
+          "rsid": "rs28399504",
+          "genotype": "0/0",
+          "allelic_depth": "35,0",
+          "clinical_recommendation": "Ultra-rapid metabolizers generate more active metabolite. Standard dosing is appropriate \u00e2\u20ac\u201d may have enhanced antiplatelet effect."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the CYP2C19 *1/*17 diplotype, classified as UM (Ultrarapid Metabolizer). This patient is a ultra-rapid metabolizer, meaning they process this drug much faster than normal. For CLOPIDOGREL: Standard dosing is appropriate for this patient based on their pharmacogenomic profile.",
+        "mechanism": "CYP2C19 is a key drug-metabolizing enzyme in the cytochrome P450 superfamily. The *1/*17 diplotype confers Ultrarapid Metabolizer status, altering the enzyme's catalytic efficiency. The patient's normal metabolic capacity allows standard CLOPIDOGREL dosing with expected therapeutic outcomes. This directly impacts the pharmacokinetics of CYP2C19 substrates, affecting therapeutic outcomes."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 19,
+        "pharmacogenes_found": 8
+      }
+    },
+    {
+      "patient id": "TEST_001",
+      "drug": "FLUOROURACIL",
+      "timestamp": "2026-02-19T13:12:05.840340Z",
+      "risk_assessment": {
+        "risk_label": "Safe",
+        "confidence_score": 0.7,
+        "severity": "low"
+      },
+      "pharmacogenomic_profile": {
+        "primary_gene": "DPYD",
+        "diplotype": "*1/*1",
+        "phenotype": "EM (Normal Metabolizer)"
+      },
+      "detected_variants": [
+        {
+          "rsid": "rs67376798",
+          "genotype": "0/0",
+          "allelic_depth": "39,0",
+          "clinical_recommendation": "Standard dosing of fluorouracil/capecitabine is appropriate. Normal DPD enzyme activity expected."
+        },
+        {
+          "rsid": "rs3918290",
+          "genotype": "0/0",
+          "allelic_depth": "44,0",
+          "clinical_recommendation": "Standard dosing of fluorouracil/capecitabine is appropriate. Normal DPD enzyme activity expected."
+        },
+        {
+          "rsid": "rs55886062",
+          "genotype": "0/0",
+          "allelic_depth": "37,0",
+          "clinical_recommendation": "Standard dosing of fluorouracil/capecitabine is appropriate. Normal DPD enzyme activity expected."
+        }
+      ],
+      "llm_generated_explanation": {
+        "summary": "Patient carries the DPYD *1/*1 diplotype, classified as EM (Normal Metabolizer). This patient is a normal (extensive) metabolizer with typical drug processing capability. For FLUOROURACIL: Standard dosing is appropriate for this patient based on their pharmacogenomic profile.",
+        "mechanism": "Dihydropyrimidine dehydrogenase (DPD), encoded by DPYD, is the rate-limiting enzyme in fluoropyrimidine catabolism, inactivating approximately 80% of administered 5-FU. The *1/*1 diplotype results in Normal Metabolizer DPD activity. The patient's normal metabolic capacity allows standard FLUOROURACIL dosing with expected therapeutic outcomes. Reduced DPD activity leads to prolonged exposure to cytotoxic fluoropyrimidine metabolites."
+      },
+      "quality_metrics": {
+        "vcf_parsing_success": true,
+        "total_variants_extracted": 19,
+        "pharmacogenes_found": 8
+      }
+    }
+  ],
+  "errors": []
+}

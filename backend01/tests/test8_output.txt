@@ -1,0 +1,130 @@
+﻿============================================================
+  PharmaGuard ΓÇö Module 8: Full Validation Suite
+============================================================
+
+=== Test Suite 1: NA12878 Benchmark ===
+
+  PASS: VCF parsing succeeds
+  PASS: Extracted variants > 0
+  PASS: CYP2D6 found
+  PASS: CYP2D6 diplotype assigned
+  PASS: CYP2D6 phenotype assigned
+    Diplotype: *2/*4, Phenotype: IM
+  PASS: CYP2C9 found
+  PASS: CYP2C9 phenotype is IM or PM
+    Diplotype: *2/*3, Phenotype: IM
+  PASS: DPYD found
+  PASS: DPYD has *2A allele
+    Diplotype: *1/*2A, Phenotype: IM
+  PASS: SLCO1B1 found
+  PASS: SLCO1B1 *5 present
+    Diplotype: *5/*15, Phenotype: DF
+
+=== Test Suite 2: NA18526 Benchmark ===
+
+  PASS: VCF parsing succeeds
+  PASS: CYP2D6 found
+  PASS: CYP2D6 phenotype EM or IM
+    Diplotype: *2/*10, Phenotype: EM
+  PASS: CYP2C19 found
+  PASS: CYP2C19 has *17
+    Diplotype: *1/*17, Phenotype: UM
+
+=== Test Suite 3: Clinical Risk Matrix ===
+
+  PASS: CYP2D6 UM + CODEINE = Toxic
+  PASS: CYP2D6 PM + CODEINE = Ineffective
+  PASS: CYP2D6 EM + CODEINE = Safe
+  PASS: CYP2C19 PM + CLOPIDOGREL = Ineffective
+  PASS: CYP2C19 UM + VORICONAZOLE = Ineffective
+  PASS: CYP2C9 PM + WARFARIN = Toxic
+  PASS: CYP2C9 IM + WARFARIN = Adjust
+  PASS: DPYD PM + FLUOROURACIL = Toxic
+  PASS: DPYD IM + FLUOROURACIL = Adjust
+  PASS: TPMT PM + AZATHIOPRINE = Toxic
+  PASS: SLCO1B1 PF + SIMVASTATIN = Toxic
+  PASS: SLCO1B1 DF + SIMVASTATIN = Adjust
+  PASS: CYP3A5 EM + TACROLIMUS = Adjust
+
+=== Test Suite 4: JSON Schema Compliance ===
+
+  PASS: HTTP 200
+  PASS: Has 'status' field
+  PASS: Has 'results' field
+  PASS: status == 'success'
+  PASS: results is list
+  PASS: Result[0] has 'drug'
+  PASS: Result[0] has 'timestamp'
+  PASS: Result[0] has patient_id
+  PASS: Result[0] risk_assessment.risk_label exists
+  PASS: Result[0] risk_assessment.confidence_score is number
+  PASS: Result[0] risk_assessment.confidence_score in [0,1]
+  PASS: Result[0] risk_assessment.severity exists
+  PASS: Result[0] risk_label valid
+  PASS: Result[0] severity valid
+  PASS: Result[0] pgx.primary_gene exists
+  PASS: Result[0] pgx.diplotype exists
+  PASS: Result[0] pgx.phenotype exists
+  PASS: Result[0] pgx.primary_gene is non-empty
+  PASS: Result[0] detected_variants is list
+  PASS: Result[0] variant has rsid
+  PASS: Result[0] rsid starts with 'rs'
+  PASS: Result[0] llm.summary exists
+  PASS: Result[0] llm.summary is non-empty
+  PASS: Result[0] qm.vcf_parsing_success exists
+  PASS: Result[0] qm.total_variants_extracted exists
+  PASS: Result[0] qm.pharmacogenes_found exists
+  PASS: Result[1] has 'drug'
+  PASS: Result[1] has 'timestamp'
+  PASS: Result[1] has patient_id
+  PASS: Result[1] risk_assessment.risk_label exists
+  PASS: Result[1] risk_assessment.confidence_score is number
+  PASS: Result[1] risk_assessment.confidence_score in [0,1]
+  PASS: Result[1] risk_assessment.severity exists
+  PASS: Result[1] risk_label valid
+  PASS: Result[1] severity valid
+  PASS: Result[1] pgx.primary_gene exists
+  PASS: Result[1] pgx.diplotype exists
+  PASS: Result[1] pgx.phenotype exists
+  PASS: Result[1] pgx.primary_gene is non-empty
+  PASS: Result[1] detected_variants is list
+  PASS: Result[1] variant has rsid
+  PASS: Result[1] rsid starts with 'rs'
+  PASS: Result[1] llm.summary exists
+  PASS: Result[1] llm.summary is non-empty
+  PASS: Result[1] qm.vcf_parsing_success exists
+  PASS: Result[1] qm.total_variants_extracted exists
+  PASS: Result[1] qm.pharmacogenes_found exists
+
+=== Test Suite 5: Edge Cases ===
+
+  PASS: Unknown drug returns 200
+  PASS: Unknown drug has result
+  PASS: Unknown drug risk is Unknown
+  PASS: Single drug returns 200
+  PASS: Single drug has 1 result
+  PASS: 8 drugs returns 200
+  PASS: 8 drugs has 8 results
+  PASS: Invalid VCF content returns 400
+
+=== Test Suite 6: NA12878 Full API Integration ===
+
+  PASS: NA12878 API returns 200
+  PASS: NA12878 produces 5 results
+    CODEINE            | CYP2D6   *2/*4      | Adjust
+    WARFARIN           | CYP2C9   *2/*3      | Adjust
+    SIMVASTATIN        | SLCO1B1  *5/*15     | Adjust
+    FLUOROURACIL       | DPYD     *1/*2A     | Adjust
+    AZATHIOPRINE       | TPMT     *3A/*3C    | Toxic
+  PASS: NA12878 CODEINE gene is CYP2D6
+  PASS: NA12878 WARFARIN gene is CYP2C9
+  PASS: NA12878 WARFARIN risk is Toxic or Adjust
+  PASS: NA12878 SIMVASTATIN gene is SLCO1B1
+
+    Full output saved: C:\Users\SUDEEP\Desktop\backend01\tests\NA12878_analysis.json
+
+============================================================
+  RESULTS: 90 passed, 0 failed
+============================================================
+
+  ALL 90 TESTS PASSED!

@@ -1,0 +1,344 @@
+{
+  "CYP2D6": {
+    "chromosome": "chr22",
+    "alleles": {
+      "*1": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [],
+        "description": "Reference (wild-type) allele"
+      },
+      "*2": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [
+          {"rsid": "rs16947", "ref": "G", "alt": "A"},
+          {"rsid": "rs1135840", "ref": "G", "alt": "C"}
+        ],
+        "description": "Normal function allele with two variants"
+      },
+      "*3": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs35742686", "ref": "T", "alt": "del"}
+        ],
+        "description": "Frameshift — non-functional"
+      },
+      "*4": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs3892097", "ref": "G", "alt": "A"},
+          {"rsid": "rs1065852", "ref": "C", "alt": "T"}
+        ],
+        "description": "Splicing defect — non-functional"
+      },
+      "*5": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [],
+        "description": "Gene deletion"
+      },
+      "*6": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs5030655", "ref": "T", "alt": "del"}
+        ],
+        "description": "Frameshift — non-functional"
+      },
+      "*9": {
+        "name": "Decreased function",
+        "activity_score": 0.5,
+        "defining_variants": [
+          {"rsid": "rs5030656", "ref": "AAG", "alt": "del"}
+        ],
+        "description": "Decreased function"
+      },
+      "*10": {
+        "name": "Decreased function",
+        "activity_score": 0.25,
+        "defining_variants": [
+          {"rsid": "rs1065852", "ref": "C", "alt": "T"},
+          {"rsid": "rs1135840", "ref": "G", "alt": "C"}
+        ],
+        "description": "Decreased function — unstable enzyme"
+      },
+      "*17": {
+        "name": "Decreased function",
+        "activity_score": 0.5,
+        "defining_variants": [
+          {"rsid": "rs28371706", "ref": "T", "alt": "C"},
+          {"rsid": "rs16947", "ref": "G", "alt": "A"}
+        ],
+        "description": "Decreased function"
+      },
+      "*41": {
+        "name": "Decreased function",
+        "activity_score": 0.5,
+        "defining_variants": [
+          {"rsid": "rs28371725", "ref": "C", "alt": "T"},
+          {"rsid": "rs16947", "ref": "G", "alt": "A"}
+        ],
+        "description": "Decreased function — defective splicing"
+      }
+    },
+    "phenotype_map": {
+      "UM": {"min_score": 2.25, "max_score": 99, "label": "Ultrarapid Metabolizer"},
+      "EM": {"min_score": 1.25, "max_score": 2.24, "label": "Normal Metabolizer"},
+      "IM": {"min_score": 0.25, "max_score": 1.24, "label": "Intermediate Metabolizer"},
+      "PM": {"min_score": 0.0, "max_score": 0.24, "label": "Poor Metabolizer"}
+    }
+  },
+
+  "CYP2C19": {
+    "chromosome": "chr10",
+    "alleles": {
+      "*1": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [],
+        "description": "Reference (wild-type) allele"
+      },
+      "*2": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs4244285", "ref": "G", "alt": "A"}
+        ],
+        "description": "Aberrant splice site — non-functional"
+      },
+      "*3": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs4986893", "ref": "G", "alt": "A"}
+        ],
+        "description": "Premature stop codon — non-functional"
+      },
+      "*4": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs28399504", "ref": "A", "alt": "G"}
+        ],
+        "description": "Non-functional"
+      },
+      "*17": {
+        "name": "Increased function",
+        "activity_score": 1.5,
+        "defining_variants": [
+          {"rsid": "rs12248560", "ref": "C", "alt": "T"}
+        ],
+        "description": "Increased transcription — gain of function"
+      }
+    },
+    "phenotype_map": {
+      "UM": {"min_score": 2.5, "max_score": 99, "label": "Ultrarapid Metabolizer"},
+      "RM": {"min_score": 1.75, "max_score": 2.49, "label": "Rapid Metabolizer"},
+      "EM": {"min_score": 1.5, "max_score": 1.74, "label": "Normal Metabolizer"},
+      "IM": {"min_score": 0.5, "max_score": 1.49, "label": "Intermediate Metabolizer"},
+      "PM": {"min_score": 0.0, "max_score": 0.49, "label": "Poor Metabolizer"}
+    }
+  },
+
+  "CYP2C9": {
+    "chromosome": "chr10",
+    "alleles": {
+      "*1": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [],
+        "description": "Reference (wild-type) allele"
+      },
+      "*2": {
+        "name": "Decreased function",
+        "activity_score": 0.5,
+        "defining_variants": [
+          {"rsid": "rs1799853", "ref": "C", "alt": "T"}
+        ],
+        "description": "Decreased enzyme activity (~12% of wild-type)"
+      },
+      "*3": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs1057910", "ref": "A", "alt": "C"}
+        ],
+        "description": "Near-absent enzyme activity (~5% of wild-type)"
+      },
+      "*5": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs28371686", "ref": "C", "alt": "T"}
+        ],
+        "description": "Non-functional"
+      }
+    },
+    "phenotype_map": {
+      "EM": {"min_score": 1.5, "max_score": 99, "label": "Normal Metabolizer"},
+      "IM": {"min_score": 0.5, "max_score": 1.49, "label": "Intermediate Metabolizer"},
+      "PM": {"min_score": 0.0, "max_score": 0.49, "label": "Poor Metabolizer"}
+    }
+  },
+
+  "CYP3A5": {
+    "chromosome": "chr7",
+    "alleles": {
+      "*1": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [],
+        "description": "Reference — expressor allele"
+      },
+      "*3": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs776746", "ref": "T", "alt": "C"}
+        ],
+        "description": "Splicing defect — non-expressor"
+      }
+    },
+    "phenotype_map": {
+      "EM": {"min_score": 1.0, "max_score": 99, "label": "Expressor"},
+      "IM": {"min_score": 0.5, "max_score": 0.99, "label": "Intermediate Expressor"},
+      "PM": {"min_score": 0.0, "max_score": 0.49, "label": "Non-expressor"}
+    }
+  },
+
+  "DPYD": {
+    "chromosome": "chr13",
+    "alleles": {
+      "*1": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [],
+        "description": "Reference (wild-type) allele"
+      },
+      "*2A": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs3918290", "ref": "C", "alt": "T"}
+        ],
+        "description": "Exon 14 skipping — non-functional"
+      },
+      "*13": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs55886062", "ref": "A", "alt": "C"}
+        ],
+        "description": "Non-functional"
+      },
+      "c.2846A>T": {
+        "name": "Decreased function",
+        "activity_score": 0.5,
+        "defining_variants": [
+          {"rsid": "rs67376798", "ref": "T", "alt": "A"}
+        ],
+        "description": "Decreased function variant"
+      }
+    },
+    "phenotype_map": {
+      "EM": {"min_score": 1.5, "max_score": 99, "label": "Normal Metabolizer"},
+      "IM": {"min_score": 0.5, "max_score": 1.49, "label": "Intermediate Metabolizer"},
+      "PM": {"min_score": 0.0, "max_score": 0.49, "label": "Poor Metabolizer"}
+    }
+  },
+
+  "TPMT": {
+    "chromosome": "chr6",
+    "alleles": {
+      "*1": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [],
+        "description": "Reference (wild-type) allele"
+      },
+      "*2": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs1800462", "ref": "C", "alt": "G"}
+        ],
+        "description": "Non-functional"
+      },
+      "*3A": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs1800460", "ref": "C", "alt": "T"},
+          {"rsid": "rs1142345", "ref": "A", "alt": "G"}
+        ],
+        "description": "Non-functional — two variants"
+      },
+      "*3B": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs1800460", "ref": "C", "alt": "T"}
+        ],
+        "description": "Non-functional"
+      },
+      "*3C": {
+        "name": "No function",
+        "activity_score": 0.0,
+        "defining_variants": [
+          {"rsid": "rs1142345", "ref": "A", "alt": "G"}
+        ],
+        "description": "Non-functional"
+      }
+    },
+    "phenotype_map": {
+      "EM": {"min_score": 1.5, "max_score": 99, "label": "Normal Metabolizer"},
+      "IM": {"min_score": 0.5, "max_score": 1.49, "label": "Intermediate Metabolizer"},
+      "PM": {"min_score": 0.0, "max_score": 0.49, "label": "Poor Metabolizer"}
+    }
+  },
+
+  "SLCO1B1": {
+    "chromosome": "chr12",
+    "alleles": {
+      "*1A": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [],
+        "description": "Reference (wild-type) allele"
+      },
+      "*1B": {
+        "name": "Normal function",
+        "activity_score": 1.0,
+        "defining_variants": [
+          {"rsid": "rs2306283", "ref": "A", "alt": "G"}
+        ],
+        "description": "Normal function — common variant"
+      },
+      "*5": {
+        "name": "Decreased function",
+        "activity_score": 0.5,
+        "defining_variants": [
+          {"rsid": "rs4149056", "ref": "T", "alt": "C"}
+        ],
+        "description": "Decreased transporter function"
+      },
+      "*15": {
+        "name": "Decreased function",
+        "activity_score": 0.5,
+        "defining_variants": [
+          {"rsid": "rs2306283", "ref": "A", "alt": "G"},
+          {"rsid": "rs4149056", "ref": "T", "alt": "C"}
+        ],
+        "description": "Decreased function with two variants"
+      }
+    },
+    "phenotype_map": {
+      "NF": {"min_score": 1.5, "max_score": 99, "label": "Normal Function"},
+      "DF": {"min_score": 0.5, "max_score": 1.49, "label": "Decreased Function"},
+      "PF": {"min_score": 0.0, "max_score": 0.49, "label": "Poor Function"}
+    }
+  }
+}

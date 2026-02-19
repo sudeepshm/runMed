@@ -1,0 +1,100 @@
+﻿.\venv\Scripts\python
+.exe : Traceback 
+(most recent call 
+last):
+At line:1 char:32
++ ... NG="utf-8"; .\v
+env\Scripts\python.ex
+e tests\test_module7.
+py 2>&1 | Ou ...
++                 ~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Traceba   
+ ck (most recent     
+call last)::Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+  File "C:\Users\SUDE
+EP\Desktop\backend01\
+tests\test_module7.py
+", line 132, in 
+<module>
+=== Module 7: End-to-End Integration Tests ===
+
+[Test 1] Full analysis: CODEINE,WARFARIN,SIMVASTATIN,CLOPIDOGREL,FLUOROURACIL
+  Status: success
+  Results: 5 drug analyses
+  Errors: 0
+
+  [CODEINE]
+    Gene:      CYP2D6
+    Diplotype: *2/*4
+    Phenotype: IM (Intermediate Metabolizer)
+    Risk:      Adjust (moderate, conf=0.8)
+    Variants:  4 detected
+    Summary:   Patient carries the CYP2D6 *2/*4 diplotype, classified as IM (Intermediate Metab...
+
+  [WARFARIN]
+    Gene:      CYP2C9
+    Diplotype: *1/*2
+    Phenotype: EM (Normal Metabolizer)
+    Risk:      Safe (low, conf=0.7)
+    Variants:  3 detected
+    Summary:   Patient carries the CYP2C9 *1/*2 diplotype, classified as EM (Normal Metabolizer...
+
+  [SIMVASTATIN]
+    Gene:      SLCO1B1
+    Diplotype: *5/*15
+    Phenotype: DF (Decreased Function)
+    Risk:      Adjust (high, conf=0.9)
+    Variants:  1 detected
+    Summary:   Patient carries the SLCO1B1 *5/*15 diplotype, classified as DF (Decreased Functi...
+
+  [CLOPIDOGREL]
+    Gene:      CYP2C19
+    Diplotype: *1/*17
+    Phenotype: UM (Ultrarapid Metabolizer)
+    Risk:      Safe (low, conf=0.7)
+    Variants:  4 detected
+    Summary:   Patient carries the CYP2C19 *1/*17 diplotype, classified as UM (Ultrarapid Metab...
+
+  [FLUOROURACIL]
+    Gene:      DPYD
+    Diplotype: *1/*1
+    Phenotype: EM (Normal Metabolizer)
+    Risk:      Safe (low, conf=0.7)
+    Variants:  3 detected
+    Summary:   Patient carries the DPYD *1/*1 diplotype, classified as EM (Normal Metabolizer)....
+
+  [Check] CODEINE -> CYP2D6: Adjust
+  [Check] WARFARIN -> CYP2C9: Safe
+  [Check] SIMVASTATIN -> SLCO1B1: Adjust
+  [Check] CLOPIDOGREL -> CYP2C19: Safe
+  [Check] FLUOROURACIL -> DPYD: Safe
+
+  [Check] JSON output: 11249 chars, valid JSON
+
+[Test 4] Invalid file extension:
+  Got 400 as expected: File must be a .vcf file.
+
+[Test 5] Empty drug list:
+    
+test_full_pipeline()
+  File "C:\Users\SUDE
+EP\Desktop\backend01\
+tests\test_module7.py
+", line 117, in 
+test_full_pipeline
+    assert no_drug_re
+sp.status_code == 400
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+AssertionError
