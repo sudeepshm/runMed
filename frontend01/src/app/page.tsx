@@ -9,6 +9,7 @@ import { cn, API_BASE, type AnalysisResponse, type DrugResult } from "@/lib/util
 import DrugInput from "@/components/drug-input";
 import VCFDropzone from "@/components/vcf-dropzone";
 import ResultsDashboard from "@/components/results-dashboard";
+import Parallax from "@/components/parallax";
 
 type AppState = "input" | "loading" | "results" | "error";
 
@@ -115,7 +116,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-6 py-8">
+      <main className="max-w-6xl mx-auto px-6 py-8 relative">
+        <Parallax />
         {/* ── Input State ─────────────────────────── */}
         {state === "input" && (
           <div className="max-w-2xl mx-auto space-y-8 animate-fade-in-up">
